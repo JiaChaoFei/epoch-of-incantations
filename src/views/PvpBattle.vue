@@ -307,24 +307,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.battle-log::-webkit-scrollbar {
-  width: 6px;
-}
-
-.battle-log::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
-
-.battle-log::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
-}
-
-.battle-log::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
 @keyframes blob {
   0% {
     transform: translate(0px, 0px) scale(1);

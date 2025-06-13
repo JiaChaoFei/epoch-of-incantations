@@ -1,6 +1,6 @@
 <template>
   <div
-    class="battle-log mb-8 h-[calc(100vh-450px)] min-h-[350px] overflow-y-auto p-4 bg-black/20 rounded-lg backdrop-blur-sm">
+    class="battle-log mb-8 h-[calc(100vh-550px)] min-h-[350px] overflow-y-auto p-4 bg-black/20 rounded-lg backdrop-blur-sm">
     <div v-for="(message, index) in messages" :key="index"
       class="message mb-3 p-3 rounded-lg transform transition-all duration-300 hover:scale-[1.02]" :class="[
         message.type === 'player1' ? 'bg-purple-500/20 border border-purple-500/30' :
@@ -36,24 +36,6 @@ defineProps<{
 </script>
 
 <style scoped>
-.battle-log::-webkit-scrollbar {
-  width: 6px;
-}
-
-.battle-log::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
-
-.battle-log::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
-}
-
-.battle-log::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
 @keyframes slide-in {
   from {
     opacity: 0;
